@@ -3,12 +3,10 @@
     <base target="_top">
     <title>Inventory</title>
     <script  src="js/jquery-3.5.1.js"></script>
-    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/form.css">
     
-  </head>
-
-  
-  
+  </head> 
   <body>
     <div class="container-fluid">
       <div id="navigation">
@@ -16,13 +14,64 @@
           <img src="./images/logo.png">
           <ul>              
             <li> Bussiness Management Portal</li>
+            <li>
+              <a href="index.html">Login page</a>
+            </li>
+            <li>
+              <a href="business.html">Branch managment</a>
+            </li>
+            <li>
+              <a href="from.index.html">Forms</a> 
+            </li>
           </ul>
         </nav>
       </div>
   
     </div>
-    <h1>INVENTORY FORM</h1>
-      <div class="container">
+    <div class="container-fluid" id="carousel">
+      <div class="w-100% h-100%">
+          <div class="carousel slide" id="carouselhome" data-ride="carousel">
+              <ol class="carousel-indicators">
+                  <li data-target="#carouselhome" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselhome" data-slide-to="1"></li>
+                  <li data-target="#carouselhome" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <img src="img/image12.jpg" alt="first slider" class="d-block w-100 h-auto ">
+                      <div class="carousel-caption">
+                          <h2 class="display-1">Business Mangagement</h2>
+                          
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <img src="img/image17.jpg" alt="second slider" class="d-block w-100 ">
+                      <div class="carousel-caption">
+                          <h2 class="display-1">Business Mangagement</h2>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <img src="./img/image17.jpg" alt="third slider" class="d-block w-100 h-auto ">
+                      <div class="carousel-caption">
+                          <h2 class="display-1">Business Mangagement</h2>
+                      </div>
+                  </div>
+              </div>
+              <a href="#carouselhome" class="carousel-control-prev" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">previous</span>
+              </a>
+              <a href="#carouselhome" class="carousel-control-next" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">next</span>
+              </a>
+    
+          </div>
+      </div>
+    </div>
+  
+      <div class="container-fluid">
+        <h1>INVENTORY FORM</h1>
         <label>Code</label>
         <input class="stock mb-2 mt-2" type="text" id="code" placeholder="enter an id code for the product"><br>
         <label>Name</label>
@@ -30,15 +79,39 @@
         <label>pack</label>
         <input class="stock mb-2 mt-2" type="text" id="pack" placeholder="enter pack size e.g a dozen has 12 ,pack=12"><br>
         <a href="https://docs.google.com/spreadsheets/d/107y0j9XsbVWglcv5tPsvkhBxxvhzWZOCOp-EJMai5fY/edit#gid=0"><input type="submit" value="Add" name="subscribe" id="button" class="button btn-warning mb-2 mt-2"  onclick="addRow();"></a>
-        <!-- <input type="submit" value="Add" name="subscribe" id="button" class="button btn-warning mb-2 mt-2"  onclick="addRow();"> -->
-        
-      </div>
-      <!-- <div class="container">
-        <a href="https://docs.google.com/spreadsheets/d/107y0j9XsbVWglcv5tPsvkhBxxvhzWZOCOp-EJMai5fY/edit#gid=0"></a>
-      </div> -->
-      <footer>
-
-      </footer>
+      <div class="container-fluid">
+        <div class="unsplash">
+            <div class="row " >
+                <div class="col-md-4">
+                    <img src="https://source.unsplash.com/random/563x563" class="d-block w-100 h-auto" >
+                </div>
+                <div class="col-md-4">
+                    <img src="https://source.unsplash.com/random/564x564" class="d-block w-100 h-auto" >
+                </div>
+                <div class="col-md-4">
+                    <img src=" https://source.unsplash.com/random/565x565" class="d-block w-100 h-auto" >
+                </div>
+                <br>
+                <br>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://source.unsplash.com/random/562x562" class="d-block w-100 h-auto" >
+                </div>
+                <div class="col-md-4">
+                    <img src="https://source.unsplash.com/random/561x561" class="d-block w-100 h-auto" >
+                </div>
+                <div class="col-md-4">
+                    <img src="https://source.unsplash.com/random/560x560" class="d-block w-100 h-100" >
+                </div>
+            </div>
+          </div>
+        </div> 
+      </div> 
+<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script> 
       <script src="js/scripts.js"></script>
       
     

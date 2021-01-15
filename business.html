@@ -8,10 +8,36 @@
     <title></title>
   </head>
   <body>
-    <div class="container">
-      <image src="../logo.png" width="300px" height ="200px"></image>
-      
-       <div class="row">
+    <style>
+      body
+       {
+         background-image: url('../bms-background.jpg');
+         background-repeat: no-repeat;
+       }
+ </style>
+ 
+    <div class="container-fluid mt-4">
+      <div id="navigation">
+        <nav>
+        <img src="./images/logo.png">
+        <ul>              
+          <li>Bussiness Management Portal</li>
+          <li>
+           <a href="business.html">Branch managment</a>
+          </li>
+          <li>
+           <a href="from.html">Forms</a> 
+          </li>
+          <li></li>
+        </ul>
+        </nav>
+      </div>
+    
+    </div>
+  
+    </div>
+    <div class="container"> 
+      <div class="row">
         <div class="col-md-6">
         
           <form id="new-contact">
@@ -26,11 +52,12 @@
 
 	    
 
-            <button type="submit" class="btn">Add Business Name</button>
+            <button type="submit" class="btn btn-warning">Add Business Name</button>
           </form>
 
-          <h2>Business:</h2>
+          <h2 class="display2" style="color: yellow">Business:</h2>
           <ul id="shops">
+            <h3 style="color: yellow"><a href="from.html">Open</a></h3>
           
        
 	

@@ -1,3 +1,21 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+input[type=text],input[type=email]{
+  background: transparent;
+  font-size: 20px;
+  border: 2px solid white;
+  width: 100%;
+}
+::placeholder{
+  color: white !important;
+}
+label{
+  font-size: x-large;
+  font-weight: bold;
+  color:orange;
+}
 .container-administrator
 {
 	background-color:red;

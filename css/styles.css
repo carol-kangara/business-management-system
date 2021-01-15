@@ -1,3 +1,39 @@
+nav{
+  background: linear-gradient(to right, #ff105f, #ffad06);
+  height:30vh;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 35%;
+  padding-top: 15px;
+
+}
+img{
+  height: 15vh;
+  padding: 15px;
+  /* top: 10%; */
+}
+ul{
+  list-style: none;
+}
+h1{
+  color: #ffad06;
+  text-align: center;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+input[type=text],input[type=email]{
+  background: transparent;
+  font-size: 20px;
+  border: 2px solid white;
+  width: 100%;
+}
+label{
+  color: orange;
+  font-size: 2em;
+  
+}
 .container-administrator
 {
 	background-color:red;
