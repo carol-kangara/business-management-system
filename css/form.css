@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image:linear-gradient( rgba(0, 0, 0,0.1),rgba(0,0,0,0.1)), url("../images/img.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+input[type=text],input[type=email]{
+    background: transparent;
+    font-size: 20px;
+    border: 2px solid white;
+    width: 100%;
+}
+.container{
+    position:center;
+    padding: 20%;
+    margin: 50px;
+    text-transform: uppercase;
+    font-size:x-large;
+}
+#button{
+    position: center;
+    left: 80%;
+}
+::placeholder{
+    color: white !important;
+}
+label{
+    font-size: x-large;
+    font-weight: bold;
+}
+nav{
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    height:30vh;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 35%;
+    padding-top: 15px;
+
+}
+img{
+    height: 15vh;
+    padding: 15px;
+    /* top: 10%; */
+}
+ul{
+    list-style: none;
+}
+h1{
+    color: #ffad06;
+    text-align: center;
+}
